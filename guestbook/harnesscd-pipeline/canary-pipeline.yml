@@ -1,12 +1,12 @@
 pipeline:
-  name: guestbook_canary_pipeline
-  identifier: guestbook_canary_pipeline
-  projectIdentifier: default_project
+  name: SELab
+  identifier: SELab
+  projectIdentifier: SELab
   orgIdentifier: default
   tags: {}
   stages:
     - stage:
-        name: deploy-guestbook
+        name: deploy-app
         identifier: deployguestbook
         description: ""
         type: Deployment
