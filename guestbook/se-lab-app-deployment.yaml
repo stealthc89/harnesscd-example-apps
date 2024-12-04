@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: se-lab-app
+spec:
+  replicas: 3
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: se-lab-app
+  template:
+    metadata:
+      labels:
+        app: se-lab-app
+    spec:
+      containers:
+      - image: stealthc89/se-lab:dev
+        name: se-lab-app
+        ports:
+        - containerPort: 8080

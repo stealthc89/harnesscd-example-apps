@@ -15,8 +15,8 @@ service:
                             connectorRef: harnessgitconnector
                             gitFetchType: Branch
                             paths:
-                                - guestbook/guestbook-ui-deployment.yaml
-                                - guestbook/guestbook-ui-svc.yaml
+                                - guestbook/se-lab-app-deployment.yaml
+                                - guestbook/se-lab-app-svc.yaml
                             repoName: harnesscd-example-apps
                             branch: master
                         skipResourceVersioning: false
