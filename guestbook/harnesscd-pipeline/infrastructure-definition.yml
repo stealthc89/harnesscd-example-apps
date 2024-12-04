@@ -4,12 +4,12 @@ infrastructureDefinition:
   description: ""
   tags: {}
   orgIdentifier: default
-  projectIdentifier: default_project
+  projectIdentifier: SELab
   environmentRef: harnessdevenv
   deploymentType: Kubernetes
   type: KubernetesDirect
   spec:
     connectorRef: harnessk8sconnector
-    namespace: default
+    namespace: harness-delegate-ng
     releaseName: release-<+INFRA_KEY>
   allowSimultaneousDeployments: false
